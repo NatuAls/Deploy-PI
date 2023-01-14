@@ -1,0 +1,44 @@
+.contlanding {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  text-shadow: 5px 3px 3px black;
+  font-size: 65px;
+  padding-top: 60px;
+}
+
+.image {
+  background-image: url('../../images/pexels-pixabay-247522.jpg');
+  background-size: cover; 
+  background-position: center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.enterbutton {
+  color: #090909;
+  padding: 0.6em 1.3em;
+  font-weight: 500;
+  font-size: 18px;
+  text-shadow: 1px 1px 1px gray;
+  border-radius: 0.5em;
+  background: #e8e8e8;
+  border: 2px solid black;
+  box-shadow: 4px 3px 3px black;
+  transition: all .3s;
+}
+
+.enterbutton:hover {
+  border: 2px solid rgb(4, 4, 122);
+  color: rgb(4, 4, 122);
+  box-shadow: 4px 3px 3px rgb(8, 8, 92);
+}
+
+.enterbutton:active {
+  box-shadow: 4px 4px 12px rgb(8, 8, 92),
+      -4px -4px 12px rgb(8, 8, 92);
+}

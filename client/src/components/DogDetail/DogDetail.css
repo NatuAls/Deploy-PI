@@ -1,0 +1,51 @@
+.divdetail {
+    position: relative;
+    background-image: url('../../images/pexels-pixmike-413195.jpg');
+    height: auto;
+    background-size: 100%;
+    padding-bottom: 100px;
+}
+
+.divtitulo {
+    margin: 0px auto;
+    margin-top: 20px;
+    height: 45px;
+    width: max-content;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    border: solid 1px white;
+    border-radius: 12px;
+}
+
+.titulodetail {
+    color: white;
+    margin: 0px auto;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.detailcontenedor {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: solid 2px black;
+    border-radius: 17px;
+    width: min-content;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.imagedetail {
+    border-bottom: solid 2px black;
+    border-radius: 15px;
+    height: 350px;
+    width: 540px;
+}
+
+.detailcontenedor p {
+    font-size: large;
+    font-weight: bold;
+    margin: 10px;
+}
+
+.detailcontenedor span {
+    font-weight: 350;
+}

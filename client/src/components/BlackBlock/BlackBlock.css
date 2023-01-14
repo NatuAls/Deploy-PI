@@ -1,0 +1,40 @@
+.divblack {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    height: 100px;
+    background-color: black;
+    border-top: solid 2px white;
+}
+
+.divblack span {
+    color: white;
+    margin-right: 20px;
+}
+
+.henry {
+    color: white;
+    margin-left: 8px;
+    font-size: x-large;
+}
+
+.imagelogo {
+    margin-left: 10px;
+    height: 68px;
+    width: 60px;
+}
+
+.divimageblock {
+    width: 260px;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    height: 75px;
+    width: min-content;
+    border-radius: 90px;
+    border: solid 2px white;
+}
