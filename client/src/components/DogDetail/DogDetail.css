@@ -1,7 +1,7 @@
 .divdetail {
     position: relative;
     background-image: url('../../images/pexels-pixmike-413195.jpg');
-    height: 100vh;
+    height: auto;
     background-size: 100%;
     padding-bottom: 100px;
 }
@@ -18,10 +18,6 @@
     box-shadow: 2px 2px aliceblue;
 }
 
-#titulodetail {
-    margin-top: 40px;
-}
-
 .titulodetail {
     color: rgb(6, 176, 165);
     margin: 0px auto;
@@ -30,10 +26,6 @@
 }
 
 .detailcontenedor {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     background-color: rgba(255, 255, 255, 0.8);
     border: solid 2px black;
     border-radius: 17px;
@@ -46,8 +38,8 @@
 .imagedetail {
     border-bottom: solid 2px black;
     border-radius: 15px;
-    height: 350px;
-    width: 540px;
+    height: 250px;
+    width: 460px;
 }
 
 .detailcontenedor p {
@@ -58,4 +50,26 @@
 
 .detailcontenedor span {
     font-weight: 350;
+}
+
+@media (min-width: 1400px) {
+    #titulodetail {
+        margin-top: 40px;
+    }
+
+    .divdetail {
+        height: 100vh;
+    }
+
+    .imagedetail {
+        height: 350px;
+        width: 540px; 
+    }
+
+    .detailcontenedor {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
 }

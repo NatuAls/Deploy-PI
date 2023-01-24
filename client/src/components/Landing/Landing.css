@@ -7,7 +7,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -80%);
-  height: 35%;
+  height: 45%;
   width: 50%;
 }
 
@@ -67,5 +67,11 @@
 
 .enterbutton:active {
   box-shadow: 4px 4px 12px rgb(6, 176, 165),
-      -4px -4px 12px rgb(6, 176, 165);
+    -4px -4px 12px rgb(6, 176, 165);
+}
+
+@media (min-width: 1400px) {
+  .contlanding {
+    height: 35%;
+  }
 }
