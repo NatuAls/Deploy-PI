@@ -1,0 +1,41 @@
+.searchbar {
+    border: 2px solid rgb(6, 176, 165);
+    box-shadow: 2px 2px rgb(6, 176, 165);
+    border-radius: 5px;
+    background-color: aliceblue;
+}
+
+.searchbar::placeholder { 
+    color: rgb(6, 176, 165);
+}
+
+.searchbarbutton {
+    margin-left: 5px;
+    border: solid 2px rgb(6, 176, 165);
+    border-radius: 5px;
+    background-color: aliceblue;
+    color: rgb(6, 176, 165);
+    font-weight: bold;
+    box-shadow: 2px 2px rgb(6, 176, 165);
+}
+
+.searchbarbutton:hover {
+    border: solid 2px aliceblue;
+    background-color: rgb(6, 176, 165);
+    box-shadow: 2px 2px aliceblue;
+    color: aliceblue;
+}
+
+@media (min-width: 1400px) {
+    .searchbar{
+        width: 8.5rem;
+        height: 1.3rem;
+    }
+
+    .searchbarbutton{
+        margin-top: 5px;
+        width: 4rem;
+        height: 1.6rem;
+        font-weight: bold;
+    }
+}

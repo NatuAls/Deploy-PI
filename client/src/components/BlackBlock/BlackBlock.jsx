@@ -1,15 +1,18 @@
 import React from "react";
 import image from '../../images/dog.png'
-import './BlackBlock.css'
+import { Link } from "react-router-dom";
+import './BlackBlock.css';
 
 function BlackBlock() {
     return(
         <div className='divblack'>
-            <div className='divimageblock'>
-                <img className='imagelogo' src={image} alt='dogs logo'/>
-                <span className='henry'> Henry Dogs </span>
-            </div>
-        <span>© 2023 - Nahuel Alesso</span>
+            <Link className="linklogo" to='/'>
+                <div className='divimageblock'>
+                    <img className='imagelogo' src={image} alt='dogs logo'/>
+                    <span className='henry'> Henry Dogs </span>
+                </div>
+            </Link>
+        <span className="blackspan">© 2023 - Nahuel Alesso</span>
         </div>
     )
 }

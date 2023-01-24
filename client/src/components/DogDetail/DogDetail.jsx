@@ -33,7 +33,7 @@ function DogDetail(){
     return(
         <div className="divdetail">
             <NavBar/>
-            <div className="divtitulo">
+            <div id="titulodetail" className="divtitulo">
                 <h1 className="titulodetail">Detalle de la raza {breed.name}</h1>
             </div>
             {loader === true && <Loader/>}

@@ -1,9 +1,9 @@
-import React , { useState } from "react";
+import React , { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useHistory } from "react-router-dom";
 import NavBar from "../NavBar/NavBar";
 import BlackBlock from "../BlackBlock/BlackBlock";
-import { getDogs, postDog, } from "../../redux/actions";
+import { getDogs, getTemperaments, postDog, } from "../../redux/actions";
 import image from '../../images/kisspng-computer-icons-check-mark-presentation-symbol-check-list-5ac41358197303.9196128115227994481043.png'
 import './BreedForm.css'
 
@@ -57,6 +57,10 @@ function BreedForm() {
         temperaments: []
     });
 
+    useEffect(() => {
+        dispatch(getTemperaments());
+    }, [dispatch]);
+
     function handleOnchange(e){
         if(e.target.name === 'temps'){
             let array = [...input.temperaments];
@@ -97,7 +101,7 @@ function BreedForm() {
     }
 
     return(
-        <div className="background">
+        <div className="backgroundform">
             <NavBar/>
             <div className="divtitulo">
                 <h1 className="titulodetail">Crea tu propia raza de perro en Henry Dogs</h1>
@@ -179,8 +183,8 @@ function BreedForm() {
                     </div>
 
                     <legend>Imagen</legend>
-                    <div className="divinput">
-                        <label className="labelleft" htmlFor="image">URL:</label>
+                    <div className="divinputimage">
+                        <label htmlFor="image">URL:</label>
                         <input 
                         type="text" 
                         name='image'
@@ -207,7 +211,8 @@ function BreedForm() {
 
                     <input 
                     type='submit' 
-                    value='Crear Raza' 
+                    value='Crear Raza'
+                    className="submit"
                     disabled={Object.keys(errors).length > 0 || !input.name}
                     />
                 </form>

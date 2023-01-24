@@ -1,15 +1,42 @@
 .contlanding {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -80%);
+  height: 35%;
+  width: 50%;
+}
+
+.divland {
+  background-color: rgb(6, 176, 165);
+  width: 18em;
+  height: 8.5em;
   display: flex;
   align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  color: white;
-  text-shadow: 5px 3px 3px black;
-  font-size: 65px;
-  padding-top: 60px;
+  border-radius: 90px;
+  border: solid 2px aliceblue;
+  box-shadow: 4px 4px aliceblue;
+}
+
+.imagelogolanding {
+  margin-left: 5%;
+  height: 90%;
+  width: 45%;
+}
+
+.henrylanding {
+  margin-left: 5%;
+  color: aliceblue;
+  font-weight: bold;
+  font-size: 250%;
 }
 
 .image {
+  position: relative;
   background-image: url('../../images/pexels-pixabay-247522.jpg');
   background-size: cover; 
   background-position: center;
@@ -20,25 +47,25 @@
 }
 
 .enterbutton {
-  color: #090909;
+  color: rgb(6, 176, 165);
   padding: 0.6em 1.3em;
   font-weight: 500;
   font-size: 18px;
-  text-shadow: 1px 1px 1px gray;
   border-radius: 0.5em;
-  background: #e8e8e8;
-  border: 2px solid black;
-  box-shadow: 4px 3px 3px black;
+  background: aliceblue;
+  border: 2px solid rgb(6, 176, 165);
+  box-shadow: 4px 4px rgb(6, 176, 165);
   transition: all .3s;
 }
 
 .enterbutton:hover {
-  border: 2px solid rgb(4, 4, 122);
-  color: rgb(4, 4, 122);
-  box-shadow: 4px 3px 3px rgb(8, 8, 92);
+  border: 2px solid aliceblue;
+  background-color: rgb(6, 176, 165);
+  color: aliceblue;
+  box-shadow: 4px 4px aliceblue;
 }
 
 .enterbutton:active {
-  box-shadow: 4px 4px 12px rgb(8, 8, 92),
-      -4px -4px 12px rgb(8, 8, 92);
+  box-shadow: 4px 4px 12px rgb(6, 176, 165),
+      -4px -4px 12px rgb(6, 176, 165);
 }

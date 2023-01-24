@@ -1,28 +1,28 @@
-.imagelogo {
-    margin-left: 10px;
-    height: 68px;
-    width: 60px;
-}
-
-.henry {
-    color: white;
-    margin-left: 8px;
-    font-size: x-large;
-}
-
 .divimage {
-    width: 260px;
+    background-color: rgb(6, 176, 165);
     margin-left: 10px;
     display: flex;
     align-items: center;
     height: 75px;
-    width: min-content;
+    width: max-content;
     border-radius: 90px;
-    border: solid 2px white;
+    border: solid 2px aliceblue;
+    box-shadow: 2px 2px aliceblue;
 }
 
-.divimage span {
-    margin-right: 20px;
+.imagelogo {
+    margin-left: 4%;
+    height: 90%;
+    width: 90px;
+}
+
+.henry {
+    color: aliceblue;
+    margin-left: 4%;
+    margin-right: -30px;
+    font-size: x-large;
+    font-weight: bold;
+    height: min-content;
 }
 
 .nav {
@@ -31,12 +31,23 @@
     justify-content: space-between;
     align-items: center;
     height: 100px;
-    border-bottom: solid 2px white;
+    border-bottom: solid 2px aliceblue;
+}
+
+.linklogo{
+    text-decoration: none;
 }
 
 .navtext {
     font-size: x-large;
+    font-weight: bold;
     text-decoration: none;
-    color: white;
+    color: aliceblue;
     margin: 30px;
+
+}
+
+.navtext:hover {
+    color: rgb(6, 176, 165);
+    font-weight: bold;
 }

@@ -21,7 +21,7 @@ const Paginado = ({dogsPerPage, allDogs}) => {
             <button className="prevbutton" onClick={() => paginado(currentPage === 1 ? pageNumbers.length : currentPage - 1)}>Anterior</button>
             {pageNumbers && pageNumbers.map(number => {
                 return <button
-                    className={`buttonpage ${currentPage === number ? 'currentbutton' : null}`}
+                    className={`${currentPage === number ? 'currentbutton' : 'buttonpage'}`}
                     key={number} 
                     onClick={() => paginado(number)}
                 >

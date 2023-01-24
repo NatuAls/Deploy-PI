@@ -20,8 +20,8 @@
   height: 70px;
   width: 70px;
   border: 10px solid rgba(255, 255, 255, 0.0);
-  border-top-color: black;
-  border-bottom-color: black;
+  border-top-color: rgb(6, 176, 165);
+  border-bottom-color: rgb(6, 176, 165);
   border-radius: 100%;
   animation: loading 1.5s infinite linear;
 }

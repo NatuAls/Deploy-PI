@@ -5,6 +5,22 @@
     width: 360px;
     border: solid black 2px;
     border-radius: 17px;
+    box-shadow: 3px 3px black;
+}
+
+@media (min-width: 1400px) {
+    .card {
+        width: 25%;
+    }
+
+    .imagecard {
+        width: 25%;
+    }
+}
+
+.card h1:hover {
+    color: rgb(6, 176, 165);
+    -webkit-text-stroke: 0.6px black;
 }
 
 .card p {
@@ -23,6 +39,12 @@
     height: 240px;
     border-radius: 15px;
     border-bottom: solid black 2px;
+}
+
+@media (min-width: 1400px) {
+    .imagecard {
+        width: 100%;
+    }
 }
 
 .name {

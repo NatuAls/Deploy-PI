@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useDispatch } from "react-redux";
 import { getDogsByName, loading, setCurrentPage } from "../../redux/actions";
+import './SearchBar.css'
 
 const SearchBar = () => {
 
@@ -24,12 +25,13 @@ const SearchBar = () => {
       dispatch(loading());
     }}>
       <input
+        className="searchbar"
         type="text"
         value={name}
         placeholder="Buscar por nombre..."
         onChange={onChange}
       />
-      <input type="submit" value="Buscar" />
+      <input className="searchbarbutton" type="submit" value="Buscar" />
     </form>
   );
 }

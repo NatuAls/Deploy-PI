@@ -1,10 +1,27 @@
+.backgroundform {
+    padding-bottom: 100px;
+    position: relative;
+    background-image: url('../../images/pexels-pixmike-413195.jpg');
+    background-size: 100%;
+    height: auto;
+    width: 100%;
+}
+
 .divform {
     margin: 20px auto;
+    margin-bottom: 30px;
     height: min-content;
-    width: max-content;
+    width: 60%;
     background-color: rgba(255, 255, 255, 0.8);
-    border: solid 1px black;
+    border: solid 2px black;
     border-radius: 12px;
+    box-shadow: 2px 2px black;
+}
+
+@media (min-width: 1400px) {
+    .divform {
+        width: 50%;
+    }
 }
 
 .divform span {
@@ -33,7 +50,7 @@
 
 .input{
     margin: 5px;
-    width: 40px;
+    width: 7vh;
     border: solid 1px black;
     border-radius: 5px;
 }
@@ -54,15 +71,28 @@ input.danger {
     border-radius: 4px;
 }
 
+.divinputimage {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: solid 2px black;
+    border-radius: 7px;
+    background-color: rgba(192, 192, 192, 0.4);
+    width: 70%;
+    margin: 0px auto;
+    margin-bottom: 8px;
+}
+
 .inputimage {
-    width: 95vh;
-    margin: 5px;
+    width: 87%;
+    margin-top: 5px;
+    margin-bottom: 5px;
     border: solid 1px black;
     border-radius: 4px;
 }
 
 .divinput {
-    border: solid 1px black;
+    border: solid 2px black;
     border-radius: 7px;
     background-color: rgba(192, 192, 192, 0.4);
     width: max-content;
@@ -85,11 +115,15 @@ input.danger {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
-    width: 125vh;
+    width: 100%;
     background-color: rgba(192, 192, 192, 0.4);
-    border: solid 1px black;
+    border: solid 2px black;
     border-radius: 12px;
     margin-bottom: 10px;
+}
+
+.tempsdiv input:hover {
+    border: solid 2px rgb(6, 176, 165);
 }
 
 .tempsdiv label {
@@ -104,10 +138,10 @@ input.danger {
     align-items: center;
     top: 50%;
     left: 50%;
-    margin: -30px 0 0 -250px;
+    transform: translate(-50%, -5%);
     height: 350px;
     width: 500px;
-    border: solid 1px white;
+    border: solid 2px white;
     border-radius: 12px;
     background-color: rgba(0, 0, 0, 0.8);
     text-align: center;
@@ -118,4 +152,27 @@ input.danger {
     height: 50%;
     width: 40%;
     margin-bottom: 20px;
+}
+
+.submit {
+    background-color: aliceblue;
+    color: rgb(6, 176, 165);
+    font-weight: bold;
+    border: solid 2px rgb(6, 176, 165);
+    border-radius: 5px;
+    box-shadow: 2px 2px rgb(6, 176, 165);
+}
+
+.submit:hover {
+    background-color: rgb(6, 176, 165);
+    color: aliceblue;
+    border: solid 2px aliceblue;
+    box-shadow: 2px 2px aliceblue;
+}
+
+.submit:disabled {
+    background: #ccc;
+    color: grey;
+    border: solid 2px red;
+    box-shadow: 2px 2px red;
 }
