@@ -7,14 +7,15 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -80%);
-  height: 45%;
+  height: 50%;
   width: 50%;
 }
 
 .divland {
   background-color: rgb(6, 176, 165);
-  width: 18em;
+  width: 16em;
   height: 8.5em;
+  padding: 0.6em 1.3em;
   display: flex;
   align-items: center;
   border-radius: 90px;
@@ -23,7 +24,7 @@
 }
 
 .imagelogolanding {
-  margin-left: 5%;
+  margin-left: 1%;
   height: 90%;
   width: 45%;
 }
@@ -72,6 +73,7 @@
 
 @media (min-width: 1400px) {
   .contlanding {
-    height: 35%;
+    height: 27%;
+    width: 70%;
   }
 }

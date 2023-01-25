@@ -10,7 +10,7 @@ function Landing() {
           <img className='imagelogolanding' src={image} alt='dogs logo'/>
           <span className='henrylanding'> Henry Dogs </span>
         </div>
-        <Link to={'/home'}>
+        <Link to='/home'>
           <button className='enterbutton'>ENTRAR</button>
         </Link>
       </div>

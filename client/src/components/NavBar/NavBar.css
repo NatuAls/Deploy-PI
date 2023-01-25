@@ -12,15 +12,15 @@
 
 .imagelogo {
     margin-left: 4%;
-    height: 90%;
-    width: 90px;
+    height: 85%;
+    width: 45%;
 }
 
 .henry {
     color: aliceblue;
     margin-left: 4%;
-    margin-right: -30px;
-    font-size: x-large;
+    margin-right: -20px;
+    font-size: large;
     font-weight: bold;
     height: min-content;
 }
@@ -39,7 +39,7 @@
 }
 
 .navtext {
-    font-size: x-large;
+    font-size:larger;
     font-weight: bold;
     text-decoration: none;
     color: aliceblue;

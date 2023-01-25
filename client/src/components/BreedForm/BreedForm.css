@@ -176,3 +176,23 @@ input.danger {
     border: solid 2px red;
     box-shadow: 2px 2px red;
 }
+
+@media (min-height: 1100px) {
+    .backgroundform {
+        height: 100vh;
+    }
+
+    #tituloform {
+        position: absolute;
+        top: 10vh;
+        left: 50%;
+        transform: translate(-50%);        
+    }
+
+    .divform {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
