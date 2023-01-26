@@ -196,3 +196,14 @@ input.danger {
         transform: translate(-50%, -50%);
     }
 }
+
+@media (max-width: 500px) {
+    .divform {
+        width: 95%;
+    }
+
+    .divinputimage {
+        width: 99%;
+        padding-right: 2px;
+    }
+}

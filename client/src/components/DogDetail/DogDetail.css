@@ -98,3 +98,28 @@
         transform: translate(-50%, -50%);
     }
 }
+
+@media (max-width: 500px) {
+    .divtitulo {
+        width: 95%;
+        height: min-content;
+    }
+
+    .detailcontenedor {
+        width: 90%;
+    }
+
+    .imagedetail {
+        width: 100%;
+    }
+
+    #titulodetail {
+        top: 13%
+    }
+
+    .titulodetail {
+        margin: 0px auto;
+        margin-bottom: 2px;
+        padding-bottom: 5px;
+    }
+}

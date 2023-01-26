@@ -11,6 +11,25 @@
     box-shadow: 2px 2px white;
 }
 
+@media (max-width: 500px) {
+    .divpages {
+        flex-wrap: wrap;
+        width: 90%;
+        height: max-content;
+        padding-right: 10px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+    .prevbutton {
+        margin-left: 0px;
+    }
+
+    .nextbutton {
+        margin-right: 0px;
+    }
+}
+
 .currentbutton {
     color: aliceblue;
     background-color: rgb(6, 176, 165);

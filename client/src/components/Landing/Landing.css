@@ -73,7 +73,22 @@
 
 @media (min-width: 1400px) {
   .contlanding {
+
     height: 27%;
     width: 70%;
+  }
+}
+
+@media (max-width: 500px) {
+  .contlanding {
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -15%);
+    height: 30%;
+    width: 50%
+  }
+
+  .image {
+    background-position: 76%;
   }
 }
