@@ -118,4 +118,9 @@
     .divfilters {
         flex-wrap: wrap;
     }
+
+    .notfound {
+        height: min-content;
+        width: 95%
+    }    
 }

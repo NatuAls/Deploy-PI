@@ -206,4 +206,11 @@ input.danger {
         width: 99%;
         padding-right: 2px;
     }
+
+    .resultdiv {
+        top: 80%;
+        transform: translate(-50%, -80%);
+        width: 95%;
+        height: max-content;
+    }    
 }
