@@ -73,7 +73,6 @@
 
 @media (min-width: 1400px) {
   .contlanding {
-
     height: 27%;
     width: 70%;
   }
@@ -84,7 +83,7 @@
     top: 15%;
     left: 50%;
     transform: translate(-50%, -15%);
-    height: 30%;
+    height: 34%;
     width: 50%
   }
 
