@@ -4,7 +4,7 @@ import Home from './components/Home/Home'
 import DogDetail from './components/DogDetail/DogDetail';
 import BreedForm from './components/BreedForm/BreedForm';
 import axios from 'axios';
-axios.defaults.baseURL = 'https://deploy-pi-production-0e2c.up.railway.app/';
+axios.defaults.baseURL = 'https://deploy-pi-q96y.onrender.com';
 
 function App() {
   return (
