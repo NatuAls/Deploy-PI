@@ -13,7 +13,7 @@ module.exports = getIdBreed = async idBreed => {
                 weight: apiBreed[0].weight.metric,
                 life_span: apiBreed[0].life_span.replace('years', 'años'),
                 temperament: apiBreed[0].temperament,
-                image: apiBreed[0].image.url
+                image: apiBreed[0].image?.url || (apiBreed[0].reference_image_id ? `https://cdn2.thedogapi.com/images/${apiBreed[0].reference_image_id}.jpg` : null)
             }
             return result;
         }
