@@ -9,7 +9,7 @@ module.exports = getApiDogs = async (name = null) => {
                 name: e.name,
                 weight: e.weight.metric.replace('NaN', 'Sin especificar'),
                 temperament: e.temperament,
-                image: e.image
+                image: e.image?.url || (e.reference_image_id ? `https://cdn2.thedogapi.com/images/${e.reference_image_id}.jpg` : null)
             }
         }));
 
