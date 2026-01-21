@@ -1,7 +1,9 @@
 const axios = require('axios');
 
 module.exports = getApiDogs = async (name = null) => {
-    const dogs = await axios.get('https://api.thedogapi.com/v1/breeds')
+    const dogs = await axios.get('https://api.thedogapi.com/v1/breeds', {
+        headers: { 'x-api-key': process.env.API_KEY }
+    })
         .then(response => response.data)
         .then(data => data.map(e => {
             return {
@@ -14,7 +16,9 @@ module.exports = getApiDogs = async (name = null) => {
         }));
 
     if(name){
-        return axios.get(`https://api.thedogapi.com/v1/breeds/search?q=${name}`)
+        return axios.get(`https://api.thedogapi.com/v1/breeds/search?q=${name}`, {
+            headers: { 'x-api-key': process.env.API_KEY }
+        })
             .then(response => response.data)
             .then(data => {
                 if(!data.length) return data;

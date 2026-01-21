@@ -1,7 +1,9 @@
 const axios = require('axios');
 
 module.exports = getApiTemps = async () => {
-    const apiTemperaments = await axios.get('https://api.thedogapi.com/v1/breeds')
+    const apiTemperaments = await axios.get('https://api.thedogapi.com/v1/breeds', {
+        headers: { 'x-api-key': process.env.API_KEY }
+    })
         .then(response => response.data)
         .then(data => data.map(el => el.temperament));
 

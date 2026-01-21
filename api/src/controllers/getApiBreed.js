@@ -2,7 +2,9 @@ const axios = require('axios');
 
 module.exports = getIdBreed = async idBreed => {
     try {
-        const apiBreed = await axios.get('https://api.thedogapi.com/v1/breeds')
+        const apiBreed = await axios.get('https://api.thedogapi.com/v1/breeds', {
+            headers: { 'x-api-key': process.env.API_KEY }
+        })
             .then(response => response.data)
             .then(data => data.filter(el => parseInt(el.id) === parseInt(idBreed)));
 
