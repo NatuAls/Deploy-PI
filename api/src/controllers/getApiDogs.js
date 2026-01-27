@@ -9,7 +9,7 @@ module.exports = getApiDogs = async (name = null) => {
             return {
                 id: e.id,
                 name: e.name,
-                weight: e.weight.metric.replace('NaN', 'Sin especificar'),
+                weight: (e.weight?.metric || 'Sin especificar').replace('NaN', 'Sin especificar'),
                 temperament: e.temperament,
                 image: e.image?.url || (e.reference_image_id ? `https://cdn4.thedogapi.com/optimized/${e.reference_image_id}.jpg` : null)
             }
@@ -26,9 +26,9 @@ module.exports = getApiDogs = async (name = null) => {
                     return {
                         id: e.id,
                         name: e.name,
-                        height: e.height.metric.replace('NaN', 'Sin especificar'),
-                        weight: e.weight.metric.replace('NaN', 'Sin especificar'),
-                        life_span: e.life_span.replace('year', 'años'),
+                        height: (e.height?.metric || 'Sin especificar').replace('NaN', 'Sin especificar'),
+                        weight: (e.weight?.metric || 'Sin especificar').replace('NaN', 'Sin especificar'),
+                        life_span: (e.life_span || 'Sin especificar').replace('year', 'años'),
                         temperament: e.temperament,
                         image: e.image?.url || null
                     };
