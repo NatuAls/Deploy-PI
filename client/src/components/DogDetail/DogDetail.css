@@ -42,11 +42,11 @@
 .imagedetail {
     border-bottom: solid 2px black;
     border-radius: 15px;
-    height: clamp(260px, 46vh, 420px);
+    height: 320px;
     width: 100%;
-    object-fit: contain;
+    object-fit: fill;
     object-position: center;
-    background-color: rgba(255, 255, 255, 0.75);
+    background-color: transparent;
 }
 
 .detailcontenedor p {
@@ -61,13 +61,13 @@
 
 @media (min-width: 1400px) {
     .imagedetail {
-        height: 420px;
+        height: 380px;
     }
 }
 
 @media (min-height: 800px) {
     .imagedetail {
-        height: clamp(280px, 48vh, 430px);
+        height: 340px;
     }
 }
 
@@ -82,7 +82,7 @@
     }
 
     .imagedetail {
-        height: 240px;
+        height: 250px;
     }
 
     .titulodetail {
