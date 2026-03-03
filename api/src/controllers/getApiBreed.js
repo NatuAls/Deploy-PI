@@ -9,13 +9,14 @@ module.exports = getIdBreed = async idBreed => {
             .then(data => data.filter(el => parseInt(el.id) === parseInt(idBreed)));
 
         if(apiBreed.length){
+            const breed = apiBreed[0];
             const result = {
-                name: apiBreed[0].name,
-                height: apiBreed[0].height.metric,
-                weight: apiBreed[0].weight.metric,
-                life_span: apiBreed[0].life_span.replace('years', 'años'),
-                temperament: apiBreed[0].temperament,
-                image: apiBreed[0].image?.url || (apiBreed[0].reference_image_id ? `https://cdn2.thedogapi.com/images/${apiBreed[0].reference_image_id}.jpg` : null)
+                name: breed.name,
+                height: (breed.height?.metric || 'Sin especificar').replace('NaN', 'Sin especificar'),
+                weight: (breed.weight?.metric || 'Sin especificar').replace('NaN', 'Sin especificar'),
+                life_span: (breed.life_span || 'Sin especificar').replace('years', 'años').replace('year', 'año'),
+                temperament: breed.temperament || 'Sin especificar',
+                image: breed.image?.url || (breed.reference_image_id ? `https://cdn2.thedogapi.com/images/${breed.reference_image_id}.jpg` : null)
             }
             return result;
         }
