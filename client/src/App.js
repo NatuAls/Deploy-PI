@@ -4,7 +4,14 @@ import Home from './components/Home/Home'
 import DogDetail from './components/DogDetail/DogDetail';
 import BreedForm from './components/BreedForm/BreedForm';
 import axios from 'axios';
-axios.defaults.baseURL = process.env.REACT_APP_API_URL || 'https://deploy-pi-q96y.onrender.com';
+
+const RENDER_API_URL = 'https://deploy-pi-q96y.onrender.com';
+const envApiUrl = process.env.REACT_APP_API_URL;
+
+axios.defaults.baseURL =
+  process.env.NODE_ENV === 'production'
+    ? RENDER_API_URL
+    : (envApiUrl || RENDER_API_URL);
 
 function App() {
   return (
