@@ -3,6 +3,9 @@
     box-shadow: 2px 2px rgb(6, 176, 165);
     border-radius: 5px;
     background-color: aliceblue;
+    width: min(100%, 300px);
+    min-height: 31px;
+    padding: 4px 8px;
 }
 
 .searchbar::placeholder { 
@@ -10,7 +13,9 @@
 }
 
 .searchbarbutton {
-    margin-left: 5px;
+    margin-left: 0;
+    min-height: 31px;
+    padding: 4px 10px;
     border: solid 2px rgb(6, 176, 165);
     border-radius: 5px;
     background-color: aliceblue;
@@ -28,13 +33,13 @@
 
 @media (min-width: 1400px) {
     .searchbar{
-        width: 8.5rem;
-        height: 1.3rem;
+        width: min(100%, 320px);
+        height: auto;
     }
 
     .searchbarbutton{
-        margin-top: 5px;
-        width: 4rem;
+        margin-top: 0;
+        width: auto;
         height: 1.6rem;
         font-weight: bold;
     }
@@ -42,6 +47,13 @@
 
 @media (max-width: 500px) {
     .searchbar {
-        margin-top: 7px;
+        margin-top: 4px;
+        width: 100%;
+    }
+
+    .searchbarbutton {
+        margin-left: 0;
+        margin-top: 6px;
+        width: 100%;
     }
 }

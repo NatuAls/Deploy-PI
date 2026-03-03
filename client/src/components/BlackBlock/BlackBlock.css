@@ -2,28 +2,59 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: absolute;
-    bottom: 0px;
-    left: 0px;
-    right: 0px;
-    height: 100px;
+    gap: 14px;
+    width: 100%;
+    min-height: 84px;
+    padding: 10px 16px;
+    margin-top: auto;
     background-color: black;
     border-top: solid 2px aliceblue;
 }
 
 .blackspan {
     color: aliceblue;
-    margin-right: 20px;
+    margin-right: 8px;
+    text-align: right;
+    font-size: 0.95rem;
 }
 
 .divimageblock {
     background-color: rgb(6, 176, 165);
-    margin-left: 10px;
+    margin-left: 0;
+    padding: 0 10px;
     display: flex;
     align-items: center;
-    height: 75px;
+    gap: 8px;
+    height: 62px;
     width: max-content;
-    border-radius: 90px;
+    border-radius: 40px;
     border: solid 2px aliceblue;
     box-shadow: 2px 2px aliceblue;
+}
+
+.divimageblock .imagelogo {
+    height: 44px;
+    width: 44px;
+}
+
+.divimageblock .henry {
+    color: aliceblue;
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+@media (max-width: 700px) {
+    .divblack {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        padding: 12px 10px;
+    }
+
+    .blackspan {
+        margin-right: 0;
+        text-align: center;
+        font-size: 0.9rem;
+    }
 }

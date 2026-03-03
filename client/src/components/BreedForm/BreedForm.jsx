@@ -199,12 +199,13 @@ function BreedForm() {
                     <div className="tempsdiv">
                         {allTemperaments.length > 0 && allTemperaments.map(({name, id}, index) => {
                             return (
-                                <div key={index}>
+                                <div className="tempitem" key={index}>
                                     <input type='checkbox' key={id} value={name} name='temps'/>
                                     <label>{name} </label>
                                 </div>
                             )
                         })}
+                        {!allTemperaments.length && <p className="temps-empty">No se pudieron cargar los temperamentos.</p>}
                     </div>
 
                     <p>Los campos con (<b className="asterisk">*</b>) son obligatorios.</p>

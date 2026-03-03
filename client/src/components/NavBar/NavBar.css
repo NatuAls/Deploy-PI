@@ -1,9 +1,11 @@
 .divimage {
     background-color: rgb(6, 176, 165);
     margin-left: 10px;
+    padding: 0 12px;
     display: flex;
     align-items: center;
     height: 75px;
+    gap: 10px;
     width: max-content;
     border-radius: 90px;
     border: solid 2px aliceblue;
@@ -11,15 +13,13 @@
 }
 
 .imagelogo {
-    margin-left: 4%;
-    height: 85%;
-    width: 45%;
+    height: 58px;
+    width: 58px;
 }
 
 .henry {
     color: aliceblue;
-    margin-left: 4%;
-    margin-right: -20px;
+    margin: 0;
     font-size: large;
     font-weight: bold;
     height: min-content;
@@ -30,8 +30,18 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 100px;
+    min-height: 100px;
+    gap: 12px;
+    padding: 10px 14px;
     border-bottom: solid 2px aliceblue;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
 }
 
 .linklogo{
@@ -43,7 +53,7 @@
     font-weight: bold;
     text-decoration: none;
     color: aliceblue;
-    margin: 30px;
+    margin: 0 0 0 20px;
 
 }
 
@@ -53,12 +63,28 @@
 }
 
 @media (max-width: 500px) {
-    .listnavbar {
-        padding-left: 5px;
+    .nav {
+        flex-direction: column;
+        justify-content: center;
+        padding: 12px 10px;
+    }
+
+    .divimage {
+        margin-left: 0;
+        width: 100%;
+        justify-content: center;
+        border-radius: 30px;
+    }
+
+    .nav ul {
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
     }
 
     .navtext {
-        width: min-content;
-        margin: 10px;
+        margin: 0;
+        font-size: 1rem;
     }
 }
